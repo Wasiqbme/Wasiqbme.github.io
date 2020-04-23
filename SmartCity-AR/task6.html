@@ -5,12 +5,11 @@
     + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-            <a-assets>
-    		<video id="TAJC" opacity="0.5" autoplay loop="true" src="TAJC.mp4"></video>
-  	    </a-assets>
-
-  		
+        <a-scene>
+             <a-assets>
+    		<video id="TAJC" autoplay loop="true" src="TAJC.mp4"></video>
+	     </a-assets>
+	     <a-video src="#TAJC" width="16" height="9" position="0 0 -20"></a-video>
 
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
@@ -24,9 +23,8 @@
                 >
                 </a-entity>
 
-                <!-- second entity: reference to the above audio -->                
-  	    <a-video src="#TAJC" width="6" height="6" position="0 0.5 0">
-	    </a-video>
+                <!-- second entity: reference to the above audio -->
+               
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
