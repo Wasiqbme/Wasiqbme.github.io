@@ -5,7 +5,6 @@ window.onload = () => {
      renderPlaces(places);
 };
 
-
 function staticLoadPlaces() {
     return [
         {
